@@ -6,8 +6,12 @@ let numdoc=parseInt(document.getElementById("numberdoc").value);
 
 
 if (numdoc==52368795) {
-  alert("Nombre paciente: Jose Rodrigues Camacho.\nPrimer dosis aplicada: Moderna el 12 de diciembre del 2021.\nProsiga a hacer el registro de la segunda dosis.");
-  window.setTimeout( ()=>{window.location.href="registronuevo.html"},1000)
+  Swal.fire({
+    title: 'Nombre paciente:\n Jose Rodrigues Camacho.',
+    text: 'Primer dosis aplicada:\n Moderna el 12 de diciembre del 2021.\n\n Prosiga a hacer el registro de la segunda dosis.',
+  })
+  //alert("Nombre paciente: Jose Rodrigues Camacho.\nPrimer dosis aplicada: Moderna el 12 de diciembre del 2021.\nProsiga a hacer el registro de la segunda dosis.");
+  window.setTimeout( ()=>{window.location.href="registronuevo.html"},16000)
 } else if(numdoc==1001235478){
     alert("Nombre paciente: Juan Perez Coral.\nPrimer dosis aplicada: Moderna el 5 de mayo del 2021.\nSegunda dosis aplicada: Moderna el 3 de octubre del 2021.\nProsiga a hacer el registro de la tercera dosis.");
     window.setTimeout( ()=>{window.location.href="registronuevo.html"},1000)
@@ -19,6 +23,11 @@ if (numdoc==52368795) {
     window.setTimeout( ()=>{window.location.href="registronuevo.html"},1000)
 }
   else{
-    alert("Los datos ingresados son incorrectos, verifique de nuevo")
+    Swal.fire({
+      icon: 'error',
+      title: 'Los datos ingresados son incorrectos,',
+      text: 'verifique de nuevo.',
+    })
+    
   }
 }

@@ -7,7 +7,7 @@ buttonsave.onkeypress=function ingresar(e){
   e.preventDefault()
 let num=parseInt(document.getElementById("number").value);
 
-if (  num==numeros) {
+if (num==numeros) {
  console.log("cumple")
     return true;
 }

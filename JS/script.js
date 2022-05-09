@@ -8,12 +8,18 @@ button.onclick=function ingresar(e){
 let vcontraseña=document.getElementById("contraseña").value;
 
 if (vusuario=="Admin" && vcontraseña=="Kuepa2022")  {
-    alert("Siga")
-    window.setTimeout( ()=>{window.location.href="dashboard.html"},2000)
-
+    Swal.fire({
+    icon: 'success',
+    title: '¡Siga!',    
+  })
+    window.setTimeout( ()=>{window.location.href="dashboard.html"},3000)
 }
  else {
-     alert("Las credenciales son incorrectas, intentelo de nuevo.")
+  Swal.fire({
+    icon: 'error',
+    title: 'Las credenciales son incorrectas,',
+    text: 'inténtelo de nuevo.',
+  })
 }
 }
 
