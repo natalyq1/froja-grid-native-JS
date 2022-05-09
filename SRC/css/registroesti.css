@@ -1,0 +1,429 @@
+/*font-family: 'Poppins', sans-serif;--300--*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/*font-family: 'Poppins', sans-serif;--400--*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/*rojo #A40101
+verde #2CA3AB
+gris #C4C4C4 grisoscuro #312e2e
+naranja #F3610E
+azul #1D1B45 **/
+*{box-sizing: border-box;}
+html{
+    height: 100%;
+}
+:root{
+    --rojo-color:#A40101;
+    --verde-color: #2CA3AB;
+    --gris-color: #C4C4C4;
+    --grisclaro-color: #312e2e;
+    --naranja-color: #F3610E;
+    --azul-color: #1D1B45;
+    --blanco-color:#ffffff;
+}
+header, main, body{font-family: 'Poppins', sans-serif;
+     text-align: center;}
+
+a:link{text-decoration: none; color: none;}
+a{text-decoration: none; color: none;
+
+}
+
+.h8{background-color:rgb(20, 20, 75);;
+    font-size: 20pt;
+    color: rgb(253, 253, 253);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+        font-size: 20pt;
+        border-radius: 7px;
+        padding: 3px 6px;
+        width: 100%;
+        margin: 10px 0px;
+        grid-area: tituloazul;
+     }
+
+.h9{font-size: 12pt;
+    font-family: 'Poppins', sans-serif;
+}
+
+.gris{background-color: lightgray;
+margin: 10px;
+padding: 10px;
+border-radius: 15px;
+border:black solid;
+border-width: 1px;
+
+width:fit-content
+}
+.blanco{background-color: rgb(255, 255, 255); 
+    border-color: black;
+    border-width: 4px;
+    width: 100%;
+}
+
+.verde{background-color:  #2ca3ab;
+    font-size: 16pt ; 
+    color: #ffffff;
+    margin: 5px 0px;
+    padding:5px 0px;
+    border:black solid 1px ;
+    border-radius: 7px;
+    font-family: 'Poppins', sans-serif;
+    width: 85%;
+}
+/* ver imagen icono*/
+.ver{float: left;
+     padding: 2px;
+     margin-left: 15px;
+    align-content: center;}
+
+label{font-size: 12pt; 
+    font-family: 'Poppins', sans-serif;}
+
+p{font-size: 12pt;
+    font-family: 'Poppins', sans-serif;}
+
+.container{background-color: #ffffff;
+    border:#C4C4C4 solid;
+    margin: 10px 10px;
+    align-content: center;
+    padding: 0 0;
+    width:96%;
+    height: auto;
+    grid-area: container;
+}
+
+.guarda{background-color:#F3610E ;
+    color: #ffffff;
+    width: 130px; 
+    border-radius: 7px; 
+    border: none;
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14pt;
+   text-align: center; 
+   cursor: pointer;
+   padding: 5px 0px;
+   
+}
+
+
+.arriba{display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: space-between;
+/*border: 2px solid red;*/
+margin-left: 200px;
+}
+
+.label{float: left;
+    margin:10px 10px;
+    display: flex;
+justify-content:flex-start;
+}
+/*botongris*/
+
+.contenedor button{
+    border: 3px solid #2CA3AB;
+    border-radius: 100%;
+    outline: none;
+    margin:20px 5px;
+}
+.contenedor2 button{
+    border: 3px solid #2CA3AB;
+    border-radius: 100%;
+    outline: none;
+    margin:20px 5px;
+}
+
+.franja{
+    width:100%;
+    padding: none;
+    margin: 0 0;
+    border-bottom: 7px solid #2CA3AB;
+    grid-area: franja;
+
+}
+.header{
+    background:#312e2e;
+    width:100%;
+    height: auto;
+    display: flex;
+    flex-direction:column;
+justify-content: space-between;
+align-items: flex-start;
+margin: 0px auto;
+padding: 0px;
+grid-area: header;
+}
+.footer{background-color: black; 
+    color: #ffffff;
+    text-align: center;
+    padding-top: 10px;
+    width: 100%; 
+    height: 50px;
+    border-bottom-color: #ffffff;
+    border-bottom-width: 1px;
+    margin: 0px auto;
+    margin-top: 40px;
+    grid-area: footer;
+}
+
+.arriba1{
+    cursor: pointer;
+}
+.arriba2{
+    cursor: pointer;
+}    
+.uno{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0 0;
+    /*border: 2px solid rgb(78, 202, 119);*/
+    margin: 0px 2px;
+    width: 100%;
+    }
+    .uno label{
+        
+        padding: 4px;
+    margin: 4px;
+    height: 40px;
+        font-family: 'Poppins', sans-serif;
+    }
+.uno input{
+    border: 2px solid #2CA3AB;
+    height: auto;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+}
+.dos{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 0px;
+    /*border: 2px solid purple;*/
+    margin-top: 5px;
+    width: 100%;
+}
+.dos label{
+    
+    height: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+.dos input{
+    width:100%;
+    border:2px solid #2CA3AB ;
+    font-family: 'Poppins', sans-serif;
+font-size: 16px ;
+}
+.dos select{
+    
+    width: 100%;
+    border:2px solid #2CA3AB;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px ;
+}
+.dosdos{
+    padding-top: 00px ;
+    margin-top:  20px ;
+    margin-left: 0px;
+    margin-right: 4px;
+    margin-bottom: 0;
+    height: 40px;
+    padding-bottom: 0;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    /*border: 2px solid rgb(28, 45, 192);*/
+    font-size: 16px ;
+    width: 100%;
+    height: auto;
+}
+.dosdos select{
+    margin: 8px 4px;
+    width: 100%;
+    border:2px solid #2CA3AB ;
+    margin: 0px 0px 0px 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tres{
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;
+    align-content: space-between;
+    padding-left: 0px;
+    /*border: 2px solid rgb(243, 38, 90);*/
+    width: 100%;
+    font-size: 16px ;
+}
+.tres label{
+    padding: 4px;
+    margin: 4px;
+    height: 15px;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+}
+.tres input{
+    
+    border:2px solid #2CA3AB ;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+}
+.tres select{
+    
+    border:2px solid #2CA3AB;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+}
+
+
+/*animacion*/
+.fadeout{
+    animation: 7s fadeout 1;
+}
+@keyframes fadeout {
+    
+    100%{transform: translateX(-700);
+    skewX:(-70deg);
+    opacity: 0;
+}
+}
+
+    
+/*animacion*/
+
+ 
+/* tableta*/
+
+@media screen and (min-width:768px){
+    .container-grid{
+        grid-template-areas: 
+                "header" 
+                "franja" 
+                "tituloazul" 
+                "container" 
+                "footer" ;
+    }
+    .header{
+        width: 100%;
+        flex-direction: row;
+    }
+    .franja{
+        width: 100%;
+    }
+    .verde{
+        width: 100%;
+
+    }
+    .h8{
+        margin-left: 0px;
+    }
+    .container{
+        
+        margin: 10px 10px;
+        padding: 10px 10px;
+    }
+   .gris{
+       margin: 20px;
+       padding: 20px 20px;
+       width:fit-content;
+   }   
+   .uno{
+        flex-direction: row;
+    justify-content:flex-start;
+}
+.dos{
+    flex-direction: row;
+    justify-content: space-around;
+    justify-content: space-between;
+    margin: 15px 0px;
+    ;
+}
+.dosdos{
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+}
+.dos input{
+    margin-right: 10px;
+}
+.dos label{
+    margin-right: 10px;
+}
+.dosdos select{
+    width: 96%;
+    margin: 0px 1px 0px 5px;
+}
+.tres{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin: 0;
+    padding: 0;
+    width: 90%;
+}
+.tres label{
+    width: 55%;
+    margin: 0;
+    padding: 0;
+}
+.departamento-muni{
+    display: flex;
+    flex-direction: row;
+}
+.footer{
+    width: 100%;
+}
+}
+
+
+/*media*/
+@media screen and (min-width:1024px){
+    .container-grid{
+        grid-template-areas: 
+                "header" 
+                "franja" 
+                "tituloazul" 
+                "container" 
+                "footer" ;
+    }
+
+    .departamento-muni{
+        display: flex;
+        flex-direction: row;
+        
+    }
+.dos input{
+    margin-right: 20px;
+}
+.dos label{
+    margin-right: 20px;
+}
+.dos{
+    font-size: 20pt;
+}
+.arriba{
+    margin: 0 20px;
+}
+
+
+}
+/*macro*/
+@media screen and (min-width:1200px){
+html{
+    background-color: #ffffff;
+    justify-content: center;
+    
+}   
+.container-grid{
+max-width: 1024px;
+margin: 0 auto;
+
+
+}
+}

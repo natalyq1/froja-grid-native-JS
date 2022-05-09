@@ -1,0 +1,313 @@
+/*font-family: 'Poppins', sans-serif;--300--*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/*font-family: 'Poppins', sans-serif;--400--*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/*rojo #A40101
+verde #2CA3AB
+gris #C4C4C4 grisoscuro #312e2e
+naranja #F3610E
+azul #1D1B45 **/
+*{box-sizing: border-box;}
+html{
+    height: 100%;
+}
+:root{
+    --rojo-color:#A40101;
+    --verde-color: #2CA3AB;
+    --gris-color: #C4C4C4;
+    --grisclaro-color: #312e2e;
+    --naranja-color: #F3610E;
+    --azul-color: #1D1B45;
+    --blanco-color:#ffffff;
+}
+header, main, body{font-family: 'Poppins', sans-serif;}
+
+a:link{text-decoration: none;}
+
+.h1{
+   
+    align-items: center;
+    text-align: center; 
+    align-content: center;
+    font-family: 'Poppins', sans-serif; 
+    font-size: 24pt; 
+    text-decoration-line:underline;
+    text-transform: uppercase;
+margin-bottom: 30px;
+width: 100%;
+grid-area: pacientes;
+/*border: 3px solid red;*/
+}
+
+.agregar{background-color: #f3610e;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10pt;
+    align-content: center;
+    padding-bottom: 3px;
+    width: 90px;
+    height: 35px;
+    border-radius: 7px;
+border:none;
+cursor:pointer;
+margin: 3px 0px;}
+.iconi{
+    padding: 0px 0px 0px 6px;
+}
+
+.naran{background-color: #1D1B45;
+    color: #ffffff; 
+    width: 100%;
+    height: auto;
+    border: 2px solid #2CA3AB ;
+    border-radius: 7px;
+}
+
+.look{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    align-content: center;
+    margin: 10px 0px;
+    padding: 30px;
+    width: 100%;
+
+grid-area: look;
+/*border: 3px solid greenyellow;*/
+
+}
+
+.buscar{display: flex;
+    align-items:flex-end;}
+
+img{color: #ffffff;}
+
+.linea{background-color: #f3610e;}
+
+table{
+    width: 98%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(104, 229, 245);
+    border-collapse: collapse;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10pt;
+margin: 10px 2px;
+
+overflow: hidden;
+justify-content: center;
+grid-area: table;
+}
+    /*bordes:ancho estilo y color--collapse para q se junte algunos bordes, mas el de abajo*/
+    
+    table th{
+        background-color: #1D1B45;
+        color: rgb(255, 255, 255);
+        height: 65px;
+        border: 3px solid rgb(104, 229, 245);
+        box-shadow: black;
+        text-align: center;
+        font-weight: lighter;
+    }
+
+    table td{
+        background-color:#C4C4C4 ;
+        text-align: center;
+        border: 3px solid rgb(104, 229, 245); }
+
+.acciones{
+    width: 10px;
+    height: 10px;
+    align-items: center;
+}
+
+    .edita{
+        background:#2CA3AB;
+        padding: 10px 16px;
+        margin: 5px 5px;
+        border-radius: 5px;
+    border: none;
+   
+}
+    .elimina{
+        background:#A40101;
+        padding: 10px 10px;
+        margin: 5px 0px;
+        border-radius: 5px;
+    border: none}
+
+    header{
+        background:#312e2e;
+        width: 100%;;
+        display: flex;
+        flex-direction:row;
+        justify-content: space-between;
+    align-items: flex-start;
+    margin: 0px auto 0px auto;
+    padding: 0px;
+    grid-area: header;
+    }
+    .logo{
+        width: 70%;
+        max-width: 100%;
+    }
+    .derecha{
+        display: flex;
+        flex-direction: row;
+    }
+    .franja{
+        width: 100%;
+        padding: none;
+        border-bottom: 7px solid #2CA3AB;
+        margin: 0px 0px 0px 0px ;
+        grid-area: franja;
+    }
+    footer{
+        background-color: black; 
+        color: #ffffff;
+        text-align: center;
+        padding-top: 10px;
+        width: 100%;; 
+        height: 50px;
+        border-bottom-color: #ffffff;
+        border-bottom-width: 1px;
+        margin: 20px auto;
+        margin-top: 40px;
+        grid-area: footer;
+    }
+
+.naranjanegro{
+    background-image: url(./img/docfondo.jpeg);
+    backface-visibility: unset;
+    background-repeat: no-repeat;
+    background-position: center;
+background-size: cover;}
+ 
+ 
+
+    .contenedor button{
+        border: 3px solid #2CA3AB;
+        border-radius: 100%;
+        outline: none;
+        margin:20px 5px;
+    }
+    .contenedor2 button{
+        border: 3px solid #2CA3AB;
+        border-radius: 100%;
+        outline: none;
+        margin:20px 7px;
+    }
+    .arriba1{
+        cursor: pointer;
+    }
+    .arriba2{
+        cursor: pointer;
+    }
+    
+    .iconb{
+        color: #ffffff;
+        margin: 0px 0px 0px 6px
+    }
+    .icona{
+        margin: 0px 0px 0px 6px
+    }
+/*----animacion----*/
+    .cartel{
+        animation: 5s cartel 1;
+        transform-origin: top center;
+    }
+
+    @keyframes cartel{
+        20%{transform: rotate(15deg);}
+        40%{transform: rotate(-10deg);}
+        60%{transform: rotate(5deg);}
+        80%{transform: rotate(-3deg);}}
+/*----animacion----*/
+
+
+    /* tableta*/
+
+@media screen and (min-width:768px){
+  header, .franja, .look, .h1, footer{
+      width: 100%;
+      margin: 0 0;
+  }
+    table{
+      width: 100%;
+      margin: 20px 0; 
+  }  
+  .look{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center;
+    align-content: center;
+    align-content: space-between;
+}
+.container-grid{
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+    
+}
+/*media*/
+@media screen and (min-width:1024px){
+    header, .franja, .look, .h1, footer{
+        width: 100%;
+    }
+    table{
+        width: 100%;
+        margin: 20px 0px;
+    }  
+    table th{
+        font-weight: bold;
+    }
+    
+}
+/*macro*/
+@media screen and (min-width:1200px){
+    header{
+        width: 100%
+    }
+    footer{
+        width:100%
+    }
+    
+    .franja, .look, .h1{
+        width: 100%;
+    }
+    table{
+        width: 100%;
+        margin: 20px 0px;
+    }  
+table th{
+    font-weight: bold;
+}
+
+.container-grid{
+    max-width: 1024px;
+    margin: 0 auto;
+    height: auto;
+    
+}
+    .container-grid{
+        display: grid;
+        grid-template-areas: 
+        "header " 
+        "franja" 
+        "look" 
+        "pacientes" 
+        "table"
+        "footer";
+        text-align: center;
+        
+}
+html{
+    margin: 0px 0px ;
+    padding: 0 0;
+    background-color: #ffffff;
+}
+}
