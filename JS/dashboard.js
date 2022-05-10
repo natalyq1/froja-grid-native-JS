@@ -11,7 +11,7 @@ if (numdoc==52368795) {
     text: 'Primer dosis aplicada:\n Moderna el 12 de diciembre del 2021.\n\n Prosiga a hacer el registro de la segunda dosis.',
   })
   //alert("Nombre paciente: Jose Rodrigues Camacho.\nPrimer dosis aplicada: Moderna el 12 de diciembre del 2021.\nProsiga a hacer el registro de la segunda dosis.");
-  window.setTimeout( ()=>{window.location.href="registronuevo.html"},16000)
+  window.setTimeout( ()=>{window.location.href="registronuevo.html"},8000)
 } else if(numdoc==1001235478){
     alert("Nombre paciente: Juan Perez Coral.\nPrimer dosis aplicada: Moderna el 5 de mayo del 2021.\nSegunda dosis aplicada: Moderna el 3 de octubre del 2021.\nProsiga a hacer el registro de la tercera dosis.");
     window.setTimeout( ()=>{window.location.href="registronuevo.html"},1000)

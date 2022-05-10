@@ -52,8 +52,7 @@ padding: 10px;
 border-radius: 15px;
 border:black solid;
 border-width: 1px;
-
-width:fit-content
+width:fit-content;
 }
 .blanco{background-color: rgb(255, 255, 255); 
     border-color: black;
@@ -188,8 +187,8 @@ grid-area: header;
     }
     .uno label{
         
-        padding: 4px;
-    margin: 4px;
+        padding: 0px;
+    margin: 3px;
     height: 40px;
         font-family: 'Poppins', sans-serif;
     }
@@ -198,6 +197,13 @@ grid-area: header;
     height: auto;
     font-family: 'Poppins', sans-serif;
     width: 100%;
+}
+.uno select{
+    border: 2px solid #2CA3AB;
+    height: auto;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    align-self: baseline;
 }
 .dos{
     display: flex;
@@ -330,7 +336,7 @@ font-size: 16px ;
    .gris{
        margin: 20px;
        padding: 20px 20px;
-       width:fit-content;
+       width:auto;
    }   
    .uno{
         flex-direction: row;

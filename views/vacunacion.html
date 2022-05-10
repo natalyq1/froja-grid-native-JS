@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es-Es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Registro 1</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../SRC/css/registroesti.css">
+    <link rel="stylesheet" type="text/css" href="../SRC/css/normalize.css">
+    <script src="https://kit.fontawesome.com/78c9eea544.js" crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<!--accion de formulario-->
+<body>
+<header class="container-grid">
+<form name="form" action="dashboard.html" method="post" >
+
+        <div class="header">
+            <a href="dashboard.html">
+                <img src="../SRC/img/0. logoforja.png">
+        </a>
+        <section class="arriba">
+<div class="contenedor">
+<a href="dashboard.html"><button class="arriba1"><img src="../SRC/img/homeicon.png" width="25px"></a></button>
+
+</div>
+   
+<div class="contenedor2">
+        <a href="dashboard.html"><button class="arriba2"><img src="../SRC/img/poweroff.png" width="25px"></a></button>
+
+</div>
+
+        </div>
+
+        <img class="franja" src="../SRC/img/12. franja.svg">
+    </section>
+        <div class="h8">REGISTRO VACUNACIÓN</div>
+
+<section class="container">
+<article class="gris">
+
+<div class="uno">
+        <!--fecha-->
+<label for="date">
+            <input type="date" id="date" name="date" min="1600-01-01" max="2022-05-05" required>
+            </label>
+<!--no. registro-->
+<label for="number">
+            <input type="number" id="number" name="number" maxlength="10" placeholder="N. de registro" required>
+        </label>
+</div>
+
+<div class="verde">
+            <img class="ver" src="../SRC/img/16. man-user.svg" width="20px">
+<h9 class="fadeout">DATOS PERSONALES</h9></div>
+
+<div class="dos">
+<!--nombre-->
+<label for="Nombre"></label>
+        <input name="nombre" id="Nombre" type="text" placeholder="Nombres" required>
+
+<!--apellido-->
+        <label for="Apellido"></label>
+        <input name="Apellido" id="Apellido" type="text" placeholder="Apellidos" required>
+</div>
+
+<div class="dos">
+<!--tipo de documento-->
+<label for="tipo de documento"></label>
+        <select name="tipo de documento" id="tipo de documento" required>
+        <option value="">Tipo de documento</option>
+        <option value="1" >Cédula de ciudadanía</option>
+        <option value="2" >Pasaporte</option>
+        <option value="3" >Documento de identidad</option>
+        </select> 
+<!--no. identificacion-->
+<label for="number"></label>
+        <input type="number" id="number" name="number" maxlength="10" placeholder="N. de identificación" required>
+</div>
+        
+<div class="dos">
+<!--fecha doc.-->
+<label for="date"></label>
+            <input type="date" id="date" name="date" min="1600-01-01" max="2022-05-05" required>
+<!--edad-->
+<label for="edad"></label>
+            <input type="number" id="edad" name="edad" maxlength="3" placeholder="Edad" required>
+</div>
+
+<div class="uno">
+<!--EPS-->
+<label for="eps"></label>
+<select name="eps" id="eps" required>
+<option value="" >EPS</option>
+<option value="1">Salud Total</option>
+<option value="2">Sanitas</option>
+<option value="3">Cruz Roja</option>
+<option value="4">Compensar</option>
+<option value="5">Coomeva</option>
+<option value="6">Famisanar </option>
+<option value="7">Cruz Blanca</option>
+<option value="8">capital Salud</option>
+</select> 
+</div>
+
+<div class="verde">
+<img class="ver" src="../SRC/img/17. geo.svg" width="20px">
+<h9 class="fadeout">INFORMACIÓN DE VACUNACIÓN</h9>
+</div>
+
+
+
+<div class="dos">
+<!--direccion-->
+<!--SEDE-->
+<label for="sede"></label>
+<select name="eps" id="eps" required>
+<option value="" >SEDE</option>
+<option value="1">Norte</option>
+<option value="2">Nor-occidente</option>
+<option value="3">Nor-oriente</option>
+<option value="4">Sur</option>
+<option value="5">Centro</option>
+<option value="6">Oriente </option>
+<option value="7">Occidente</option>
+<option value="8">Otro</option>
+</select> 
+
+
+<!--PROFESIONAL-->
+<label for="eps"></label>
+<select name="eps" id="eps" required>
+<option value="" >PROFESIONAL</option>
+<option value="1">Ana Gonzales</option>
+<option value="2">Luis Rodrigues</option>
+<option value="3">Blanca Gomez</option>
+<option value="4">Ana Gonzales</option>
+<option value="5">Luis Rodrigues</option>
+<option value="6">Blanca Gomez</option>
+<option value="7">Ana Gonzales</option>
+<option value="8">Luis Rodrigues</option>
+</select>   
+</div>
+
+<div class="dos">
+<!--ID PROFESIONAL-->
+<label for="number"></label>
+<input name="number" id="number"
+type="number" maxlength="12" placeholder="ID PROFESIONAL" required>
+
+
+<!-- DOSIS-->
+<label for="number"></label>
+<select name="eps" id="eps" required>
+<option value="">Dosis</option>
+<option value="1">Primera</option>
+<option value="2">Segunda</option>
+<option value="3">Tercera</option>
+</select> 
+</div>
+
+<div class="uno">
+<!-- BIOLÓGICO-->
+<label for="eps"></label>
+<select name="eps" id="eps" required>
+<option value="" >BIOLÓGICO</option>
+<option value="1">Pfizer</option>
+<option value="2">BioNTech</option>
+<option value="3">AstraZeneca</option>
+<option value="4">Moderna</option>
+<option value="5">Sinovac</option>
+<option value="6">Novavax</option>
+</select> 
+
+<!--fecha-->
+<label for="date">
+        <input name="fecha" id="fecha" type="text" placeholder="Fecha 1ra dosis" required>
+    </label>
+
+    <!--fecha-->
+<label for="date">
+        <input name="fecha" id="fecha" type="text" placeholder="Fecha 1ra dosis" required>
+    </label>
+    
+    <!--fecha-->
+    <label for="date">
+        <input name="fecha" id="fecha" type="text" placeholder="Fecha 1ra dosis" required>
+        </label>
+</div>
+<!--OBSERVACIONES-->
+<div class="uno">
+<input name="observaciones" id="observaciones" type="text" placeholder="Observaciones">
+
+</div>
+</form>
+</article>
+<!--boton-->
+</div>
+
+</div>
+<div>
+        <a href="dashboard.html"></a>
+        <button class="guarda" id="guardaformulario" type="submit">Guardar</button>
+        </a>
+    </div>    
+
+</section>
+
+
+
+<div class="footer">
+        © 2021 forja empresas
+</div>
+</header>
+</body>
+<script src="../JS/registro.js"></script>
+
+</html>
