@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Registro 1</title>
+    <title>Vacunacón</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../SRC/css/registroesti.css">
@@ -39,20 +39,37 @@
 
         <img class="franja" src="../SRC/img/12. franja.svg">
     </section>
-        <div class="h8">REGISTRO VACUNACIÓN</div>
+
+
+    <div class="estado-botones">
+            <h4>Estado: activo</h4>
+        
+        <div>
+            <a href="dashboard.html"></a>
+        <button class="guarda-arriba" id="guardaformulario" type="submit">Guardar cambios</button>
+        </a>
+        <a href="dashboard.html"></a>
+        <button class="guarda" id="guardaformulario" type="submit">Cerrar</button>
+        </a>
+</div>
+    </div>    
+
+
+    <h3 class="info-paciente">INFORMACIÓN DEL PACIENTE</h2>
+
 
 <section class="container">
 <article class="gris">
 
-<div class="uno">
+<div class="dos">
         <!--fecha-->
-<label for="date">
+<label for="date"></label>
             <input type="date" id="date" name="date" min="1600-01-01" max="2022-05-05" required>
-            </label>
+            
 <!--no. registro-->
-<label for="number">
+<label for="number"></label>
             <input type="number" id="number" name="number" maxlength="10" placeholder="N. de registro" required>
-        </label>
+        
 </div>
 
 <div class="verde">
@@ -107,7 +124,9 @@
 <option value="8">capital Salud</option>
 </select> 
 </div>
+</article>
 
+<article class="gris">
 <div class="verde">
 <img class="ver" src="../SRC/img/17. geo.svg" width="20px">
 <h9 class="fadeout">INFORMACIÓN DE VACUNACIÓN</h9>
@@ -184,12 +203,12 @@ type="number" maxlength="12" placeholder="ID PROFESIONAL" required>
 
     <!--fecha-->
 <label for="date">
-        <input name="fecha" id="fecha" type="text" placeholder="Fecha 1ra dosis" required>
+        <input name="fecha" id="fecha" type="text" placeholder="Fecha 2da dosis" required>
     </label>
     
     <!--fecha-->
     <label for="date">
-        <input name="fecha" id="fecha" type="text" placeholder="Fecha 1ra dosis" required>
+        <input name="fecha" id="fecha" type="text" placeholder="Fecha 3ra dosis" required>
         </label>
 </div>
 <!--OBSERVACIONES-->
@@ -203,11 +222,7 @@ type="number" maxlength="12" placeholder="ID PROFESIONAL" required>
 </div>
 
 </div>
-<div>
-        <a href="dashboard.html"></a>
-        <button class="guarda" id="guardaformulario" type="submit">Guardar</button>
-        </a>
-    </div>    
+
 
 </section>
 
