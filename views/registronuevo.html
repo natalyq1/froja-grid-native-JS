@@ -18,7 +18,7 @@
 <!--accion de formulario-->
 <body>
 <header class="container-grid">
-<form name="form" action="dashboard.html" method="post" >
+<form name="form" action="dashboard.html" method="post" id="form">
 
         <div class="header">
             <a href="dashboard.html">
@@ -52,8 +52,8 @@
             </label>
 <!--no. registro-->
 <label for="number">
-            <input type="number" id="number" name="number" maxlength="10" placeholder="N. de registro" required>
-        </label>
+        <input type="text" id="number" name="number" maxlength="10" pattern="[0-9]{3,}" placeholder="N. de registro" required>
+</label>
 </div>
 
 <div class="verde">
@@ -63,10 +63,10 @@
 <div class="dos">
 <!--nombre-->
 <label for="Nombre"></label>
-        <input name="nombre" id="Nombre" type="text" placeholder="Nombres" required>
+<input name="nombre" id="Nombre" type="text" placeholder="Nombres" pattern="[A-Za-z\sA-Za-z]{3,}" required>
 <!--apellido-->
         <label for="Apellido"></label>
-        <input name="Apellido" id="Apellido" type="text" placeholder="Apellidos" required>
+        <input name="Apellido" id="Apellido" type="text" placeholder="Apellidos" pattern="[A-Za-z\sA-Za-z]{3,}" required>
 </div>
 
 <div class="dos">
@@ -80,7 +80,7 @@
         </select> 
 <!--no. identificacion-->
 <label for="number"></label>
-        <input type="number" id="number" name="number" maxlength="10" placeholder="N. de identificación" required>
+<input type="text" id="number" name="number" maxlength="12" placeholder="N. de identificación" pattern="[0-9]{3,}" required>
 </div>
         
 <div class="dos">
@@ -89,7 +89,7 @@
             <input type="date" id="date" name="date" min="1600-01-01" max="2022-05-05" required>
 <!--edad-->
 <label for="edad"></label>
-            <input type="number" id="edad" name="edad" maxlength="3" placeholder="Edad" required>
+<input type="text" id="edad" name="edad" maxlength="3" placeholder="Edad" pattern="[0-100]{,3}" required>
 </div>
 
 <div class="verde">
@@ -1281,7 +1281,7 @@
 <div class="dos">
 <!--direccion-->
 <label for="number"></label>
-        <input type="text" type="number" id="number" name="number" placeholder="Dirección" required>
+        <input type="text" type="number" id="number" name="number" placeholder="Dirección" pattern="[a-z0-9._%+-\s]+[a-z0-9._%+-\s]+[a-z0-9._%+-\s]+[a-z0-9._%+-\s]+[a-z0-9._%+-\s]{2,}" required>
 
 <!--correo-->
 <label for="email"></label>
@@ -1292,12 +1292,11 @@
 <!--telefono fijo-->
 <label for="telefono"></label>
 <input name="telefono" id="telefono"
-type="number" maxlength="7" placeholder="Teléfono fijo" required>
+type="text" maxlength="7" placeholder="Teléfono fijo" pattern="[0-9]{7,}" required>
 
 <!--celular-->
 <label for="telefono"></label>
-<input name="telefono" id="telefono"
-type="number" maxlength="10" placeholder="Celular" required>
+<input type="text" id="number" name="number" maxlength="10" placeholder="N. de identificación" pattern="[0-9]{7,}" required>
 </div>
 
 

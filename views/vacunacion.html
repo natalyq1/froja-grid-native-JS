@@ -18,7 +18,6 @@
 <!--accion de formulario-->
 <body>
 <header class="container-grid">
-<form name="form" action="dashboard.html" method="post" >
 
         <div class="header">
             <a href="dashboard.html">
@@ -45,22 +44,20 @@
             <h4>Estado: activo</h4>
         
         <div>
-            <a href="dashboard.html"></a>
-        <button class="guarda-arriba" id="guardaformulario" type="submit">Guardar cambios</button>
-        </a>
-        <a href="dashboard.html"></a>
-        <button class="guarda" id="guardaformulario" type="submit">Cerrar</button>
-        </a>
+            
+        <button form="form" class="guarda-arriba" id="guardaformulario" type="submit">Guardar cambios</button>
+        
+        <button form="form" class="guarda" id="guardaformulario" type="submit">Cerrar</button>
+        
 </div>
     </div>    
 
 
     <h3 class="info-paciente">INFORMACIÓN DEL PACIENTE</h2>
 
-
 <section class="container">
 <article class="gris">
-
+<form name="form" action="dashboard.html" method="post" id="form">
 <div class="dos">
         <!--fecha-->
 <label for="date"></label>
@@ -68,7 +65,7 @@
             
 <!--no. registro-->
 <label for="number"></label>
-            <input type="number" id="number" name="number" maxlength="10" placeholder="N. de registro" required>
+            <input type="text" id="number" name="number" maxlength="10" pattern="[0-9]{3,}" placeholder="N. de registro" required>
         
 </div>
 
@@ -79,11 +76,11 @@
 <div class="dos">
 <!--nombre-->
 <label for="Nombre"></label>
-        <input name="nombre" id="Nombre" type="text" placeholder="Nombres" required>
+        <input name="nombre" id="Nombre" type="text" placeholder="Nombres" pattern="[A-Za-z\sA-Za-z]{3,}" required>
 
 <!--apellido-->
         <label for="Apellido"></label>
-        <input name="Apellido" id="Apellido" type="text" placeholder="Apellidos" required>
+        <input name="Apellido" id="Apellido" type="text" placeholder="Apellidos" pattern="[A-Za-z\sA-Za-z]{3,}" required>
 </div>
 
 <div class="dos">
@@ -97,7 +94,7 @@
         </select> 
 <!--no. identificacion-->
 <label for="number"></label>
-        <input type="number" id="number" name="number" maxlength="10" placeholder="N. de identificación" required>
+        <input type="text" id="number" name="number" maxlength="12" placeholder="N. de identificación" pattern="[0-9]{3,}" required>
 </div>
         
 <div class="dos">
@@ -106,7 +103,7 @@
             <input type="date" id="date" name="date" min="1600-01-01" max="2022-05-05" required>
 <!--edad-->
 <label for="edad"></label>
-            <input type="number" id="edad" name="edad" maxlength="3" placeholder="Edad" required>
+            <input type="text" id="edad" name="edad" maxlength="3" placeholder="Edad" pattern="[0-100]{,3}" required>
 </div>
 
 <div class="uno">
@@ -121,7 +118,7 @@
 <option value="5">Coomeva</option>
 <option value="6">Famisanar </option>
 <option value="7">Cruz Blanca</option>
-<option value="8">capital Salud</option>
+<option value="8">Capital Salud</option>
 </select> 
 </div>
 </article>
@@ -170,7 +167,7 @@
 <!--ID PROFESIONAL-->
 <label for="number"></label>
 <input name="number" id="number"
-type="number" maxlength="12" placeholder="ID PROFESIONAL" required>
+type="text" maxlength="12" placeholder="ID PROFESIONAL" pattern="[0-9]{3,}" required>
 
 
 <!-- DOSIS-->
@@ -212,9 +209,9 @@ type="number" maxlength="12" placeholder="ID PROFESIONAL" required>
         </label>
 </div>
 <!--OBSERVACIONES-->
-<div class="uno">
-<input name="observaciones" id="observaciones" type="text" placeholder="Observaciones">
+<div>
 
+<textarea rows="3" cols="120" id="caja-observaciones" name="observaciones" placeholder="Observaciones adicionales"></textarea>
 </div>
 </form>
 </article>

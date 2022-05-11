@@ -311,7 +311,12 @@ font-size: 16px ;
     font-family: 'Poppins', sans-serif;
     width: 100%;
 }
-
+#caja-observaciones{
+    width:70%;
+    border:2px solid #2CA3AB;
+    align-content: center;
+    
+}
 
 /*animacion*/
 .fadeout{
